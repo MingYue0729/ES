@@ -24,7 +24,7 @@
 
 ### 2.1. tomcat日志处理
 
-**数据来源**:本地的tomcat的logs中的日志或使用下面的文件
+**数据来源**：本地的tomcat的logs中的日志或使用下面的文件
 
 [tomcat_logs.zip](https://www.yuque.com/attachments/yuque/0/2024/zip/550753/1729480919015-0e4652e2-c6b4-461b-822d-80919428fd83.zip)
 
@@ -840,9 +840,9 @@ INSERT INTO student VALUES ('5', '张三', 20, '男');
 
 ## 三、问题及解决办法
 
-**问题：**对名为`tomcat_logs`的索引中的`response`字段进行聚合操作时出现了问题，`response`字段被标识为`text`类型，而`text`类型的字段默认不支持聚合和排序操作，因为它们是为全文搜索优化的，而不是为了存储单个值。
+**问题**：对名为`tomcat_logs`的索引中的`response`字段进行聚合操作时出现了问题，`response`字段被标识为`text`类型，而`text`类型的字段默认不支持聚合和排序操作，因为它们是为全文搜索优化的，而不是为了存储单个值。
 
-**解决办法：**设置`fielddata=true`，更新映射，为`response`字段设置fielddata=true
+**解决办法**：设置`fielddata=true`，更新映射，为`response`字段设置fielddata=true
 
 ```
 PUT /tomcat_logs/_mapping
