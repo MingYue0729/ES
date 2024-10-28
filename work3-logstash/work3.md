@@ -493,7 +493,7 @@ GET /tomcat_logs/_search
 
 这个查询查找被访问次数最多的URL，可以帮助了解哪些页面最受欢迎。
 
-```json
+```
 GET /tomcat_logs/_search
 {
   "size": 0,
@@ -634,7 +634,7 @@ GET /tomcat_logs/_search
 
 **⑤按请求方法（GET, POST）统计请求数量**
 
-```json
+```
 GET /tomcat_logs/_search
 {
   "size": 0,
