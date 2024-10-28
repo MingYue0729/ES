@@ -24,7 +24,7 @@
 
 ### 2.1. tomcat日志处理
 
-**数据来源：**本地的tomcat的logs中的日志或使用下面的文件
+**数据来源**:本地的tomcat的logs中的日志或使用下面的文件
 
 [tomcat_logs.zip](https://www.yuque.com/attachments/yuque/0/2024/zip/550753/1729480919015-0e4652e2-c6b4-461b-822d-80919428fd83.zip)
 
